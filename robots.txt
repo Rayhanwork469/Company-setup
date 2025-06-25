@@ -1,4 +1,4 @@
+Sitemap: https://rayhanwork469.github.io/Company-setup/sitemap.xml
 User-agent: *
 Disallow:
 
-Sitemap: https://rayhanwork469.github.io/Company-setup/sitemap-github.xml
