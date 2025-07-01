@@ -1,0 +1,190 @@
+# Site settings
+title: "Bahrain Company Formation | Complete Business Setup Guide"
+name: "BahrainBiz"
+description: "Professional company formation services in Bahrain with 100% foreign ownership. Complete guide to WLL, LLC, BSC formation with transparent pricing and expert support."
+url: "https://rayhanwork469.github.io"
+baseurl: "/Company-setup"
+
+# Author information
+author:
+  name: "BahrainBiz Expert Team"
+  email: "info@bahrainbiz.com"
+  location: "Bahrain"
+
+# Site metadata
+lang: "en"
+timezone: "Asia/Bahrain"
+encoding: "utf-8"
+
+# SEO settings
+google_analytics: "G-XXXXXXXXXX"  # Replace with your GA4 tracking ID
+google_site_verification: "googlee42ca49d74529694"
+
+# Social media
+social:
+  twitter: "@bahrainbiz"
+  linkedin: "company/bahrainbiz"
+  facebook: "bahrainbiz"
+
+# GitHub Pages settings
+permalink: pretty
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-redirect-from
+
+# Include/Exclude files
+include:
+  - _pages
+  - robots.txt
+  - sitemap.xml
+  - manifest.json
+  - .htaccess
+
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - .git
+  - .gitignore
+
+# Collections
+collections:
+  faqs:
+    output: true
+    permalink: /:collection/:name/
+  services:
+    output: true
+    permalink: /:collection/:name/
+
+# Default values
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      author: "BahrainBiz Team"
+  - scope:
+      path: ""
+      type: "faqs"
+    values:
+      layout: "faq"
+      sitemap: true
+  - scope:
+      path: ""
+      type: "services"
+    values:
+      layout: "service"
+      sitemap: true
+
+# Sass settings
+sass:
+  style: compressed
+  sass_dir: assets/css
+
+# Compression
+compress_html:
+  clippings: all
+  comments: all
+  endings: html
+  startings: [html, head, body]
+  blanklines: false
+  profile: false
+
+# Security headers
+webrick:
+  headers:
+    X-Frame-Options: SAMEORIGIN
+    X-Content-Type-Options: nosniff
+    X-XSS-Protection: "1; mode=block"
+    Referrer-Policy: "strict-origin-when-cross-origin"
+
+# Site structure
+navigation:
+  - title: "Home"
+    url: "/#home"
+  - title: "Why Bahrain"
+    url: "/#why"
+  - title: "Company Types"
+    url: "/#company-types"
+  - title: "Process"
+    url: "/#how"
+  - title: "Pricing"
+    url: "/#cost"
+  - title: "Services"
+    url: "/#services"
+  - title: "FAQ"
+    url: "/#faq"
+  - title: "Contact"
+    url: "/#contact"
+
+# Contact information
+contact:
+  email: "info@bahrainbiz.com"
+  phone: "+973-xxxx-xxxx"
+  whatsapp: "+973-xxxx-xxxx"
+  address: "Manama, Kingdom of Bahrain"
+
+# Business information
+business:
+  name: "BahrainBiz"
+  legal_name: "Bahrain Business Formation Services"
+  registration: "CR-XXXXXX"
+  vat: "BH-XXXXXXXX"
+  established: "2020"
+  
+# Service areas
+locations:
+  - "Manama"
+  - "Financial Harbour"
+  - "Seef District"
+  - "Diplomatic Area"
+  - "Bahrain Bay"
+  - "Riffa"
+  - "Muharraq"
+  - "Hidd Industrial"
+
+# Keywords for SEO
+keywords: 
+  - "Bahrain company formation"
+  - "WLL company Bahrain"
+  - "LLC formation Bahrain"
+  - "BSC company setup"
+  - "Business license Bahrain"
+  - "100% foreign ownership"
+  - "Bahrain business setup"
+  - "Commercial registration"
+  - "Company formation cost"
+  - "Bahrain visa services"
+
+# Performance optimization
+liquid:
+  error_mode: warn
+  strict_filters: false
+  strict_variables: false
+
+# Development settings (only active in development)
+development:
+  show_drafts: false
+  incremental: true
+  livereload: true
+  
+# Production optimizations
+production:
+  future: false
+  unpublished: false
+  limit_posts: 0
